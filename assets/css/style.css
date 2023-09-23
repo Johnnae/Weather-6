@@ -1,0 +1,91 @@
+:root {
+    color: rgb(3, 49, 18);
+    font-weight: 600;
+  }
+  
+  .navbar {
+    margin-bottom: 5vh;
+  }
+  
+  .today {
+    margin-top: 2vh;
+  }
+  .card {
+    text-align:center;
+    background: rgba(108, 128, 219, 0.38);
+    border-radius: 20px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .card-search {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  } 
+  
+.btn{
+    background-color: #010a09;
+    color: white;
+    border-radius: 25px;
+    font-size: smaller;
+    font-weight: bold;
+    border-color: rgba(108, 128, 219, 0.38);
+    border: 10px;
+    width: fit-content;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  p {
+    font-size: small;
+    line-height: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h3 {
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  body {
+    background-color: rgb(25, 171, 230);
+    height: 100vh;
+  }
+  
+  p,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+  }
+  
+  h5, h6 {
+    font-weight: 900;
+  } 
+  
+.container {
+  width: 90vw;
+}
+
+
+#formCity {
+  max-width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-search {
+  min-width: fit-content;
+  margin-left:10%;
+  width:100%;
+}
+
+.card5day {
+  height: fit-content;
+  font-size: .25rem;
+  margin-top: .2vh;
+  margin-left : 5%;
+}
