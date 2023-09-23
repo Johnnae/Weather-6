@@ -1,5 +1,5 @@
-var resultTextEl = document.querySelector('#result-text');
-var resultContentEl = document.querySelector('#result-content');
+var resultEl = document.querySelector('#result-text');
+var ContentEl = document.querySelector('#result-content');
 var searchFormEl = document.querySelector('#search-form');
 
 function getParams() {
@@ -54,7 +54,7 @@ function printResults(resultObj) {
 
   resultBody.append(titleEl, bodyContentEl, linkButtonEl);
 
-  resultContentEl.append(resultCard);
+  ContentEl.append(resultCard);
 }
 
 function searchApi(query, format) {
@@ -76,15 +76,15 @@ function searchApi(query, format) {
     })
     .then(function (locRes) {
       // write query to page so user knows what they are viewing
-      resultTextEl.textContent = locRes.search.query;
+      resultEl.textContent = locRes.search.query;
 
       console.log(locRes);
 
       if (!locRes.results.length) {
         console.log('No results found!');
-        resultContentEl.innerHTML = '<h3>No results found, search again!</h3>';
+        ContentEl.innerHTML = '<h3>No results found, search again!</h3>';
       } else {
-        resultContentEl.textContent = '';
+        ContentEl.textContent = '';
         for (var i = 0; i < locRes.results.length; i++) {
           printResults(locRes.results[i]);
         }
